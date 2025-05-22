@@ -1,6 +1,6 @@
 # Hisar Pico-Car
 
-### Checklist
+## Checklist
 
 1. GitHub proje sayfası oluşturulacak (private), Sedat hocaya paylaşcam
 2. Rasberry pico nedir, nası çalışıo açıklancak

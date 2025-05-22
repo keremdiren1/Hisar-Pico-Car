@@ -9,7 +9,7 @@
 7. Breadboardda led ve pico bağlanmasının standardı açıklanacak
 8. bir dc motor döndürülecek
 9. Web tabanlı html sayfası yapılacak. Bu sayfada led yanıp sönecek. Robotu sağa ve sola döndürme butonu olacak.
-10. 0-360 derece arasında motorun döndürme turu ayarlanacak
+10. (0,360) derece arasında motorun döndürme turu ayarlanacak
 11. L298 motor sürücü tanımlanacak
 12. L298 ve 2 motor bağlanıp pico ile kontrol edilecek
 13. Power management araştırılacak

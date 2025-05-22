@@ -20,4 +20,7 @@ Raspberry Pi Pico, Raspberry Pi Vakfı tarafından geliştirilen ve 2021 yılın
   5. Yüklenen program, RP2040 üzerindeki flash hafızadan çalıştırılır.
   6. Program giriş/çıkış pinlerini (GPIO) kullanarak fiziksel dünyayla iletişim kurar.
   7. Örneğin: LED yakar, sensör verisi okur, motor kontrol eder.
-- aa
+- Pico’nun 26 adet GPIO pini vardır. Bunlar şunları yapabilir:
+  - Giriş (Input): Buton, sensör gibi şeyleri okumak.
+  - Çıkış (Output): LED, motor gibi cihazlara sinyal göndermek.
+  - Ayrıca: PWM, UART, SPI, I2C gibi protokolleri destekler.

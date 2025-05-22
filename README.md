@@ -9,7 +9,7 @@
 5. Rasberry ve breadboardla birlikte led yanıp sönecek
 6. Led nedir açıklanacak
 7. Breadboardda led ve pico bağlanmasının standardı açıklanacak
-8. bir dc motor döndürülecek
+8. Bir dc motor döndürülecek
 9. Web tabanlı html sayfası yapılacak. Bu sayfada led yanıp sönecek. Robotu sağa ve sola döndürme butonu olacak.
 10. (0,360) derece arasında motorun döndürme turu ayarlanacak
 11. L298 motor sürücü tanımlanacak

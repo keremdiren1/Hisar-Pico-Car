@@ -1,4 +1,4 @@
-### Meaning
+## Meaning
 
 Power management refers to the process of controlling and optimizing the use of electrical power in systems, devices, or facilities.
 

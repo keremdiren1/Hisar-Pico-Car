@@ -9,7 +9,7 @@ L298 Motor Driver:
 - Dual H-Bridge motor driver.
 - Requires two power inputs:
   - Vcc (logic): 5V for internal logic.
-  - Vs (motor power): 6V–12V.
+  - Vs (motor power): 6V–12V. (batteries will be used)
 - Can control two DC motors independently.
 - Has significant voltage drop (1.8V–2.5V).
 

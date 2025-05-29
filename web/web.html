@@ -92,13 +92,25 @@
     }
   </style>
 </head>
+<!-- -->
+<script>
+  const PICO_IP = 'http://replaceIP'; // Replace with your Pico's actual IP
+
+  function sendCommand(direction) {
+    fetch(`${PICO_IP}/${direction}`)
+      .then(response => response.text())
+      .then(data => console.log(data))
+      .catch(err => console.error('Error:', err));
+  }
+</script>
+<!-- -->
 <body>
   <div class="full-screen">
     <div class="text">HISAR PICO-CAR</div>
-    <img class="image left" src="https://github.com/keremdiren1/Hisar-Pico-Car/blob/main/web/images/leftArrow.png?raw=true">
-    <img class="image down" src="https://github.com/keremdiren1/Hisar-Pico-Car/blob/main/web/images/downArrow.png?raw=true">
-    <img class="image right" src="https://github.com/keremdiren1/Hisar-Pico-Car/blob/main/web/images/rightArrow.png?raw=true">
-    <img class="image up" src="https://github.com/keremdiren1/Hisar-Pico-Car/blob/main/web/images/upArrow.png?raw=true">
+    <img class="image left" onclick="sendCommand('left')" src="https://github.com/keremdiren1/Hisar-Pico-Car/blob/main/web/images/leftArrow.png?raw=true">
+    <img class="image down" onclick="sendCommand('down')" src="https://github.com/keremdiren1/Hisar-Pico-Car/blob/main/web/images/downArrow.png?raw=true">
+    <img class="image right" onclick="sendCommand('right')" src="https://github.com/keremdiren1/Hisar-Pico-Car/blob/main/web/images/rightArrow.png?raw=true">
+    <img class="image up" onclick="sendCommand('up')" src="https://github.com/keremdiren1/Hisar-Pico-Car/blob/main/web/images/upArrow.png?raw=true">
     <div class="led">LED</div>
   </div>
 </body>

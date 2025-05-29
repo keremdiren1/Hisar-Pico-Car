@@ -4,7 +4,8 @@ I used Pico 2, DC Motor, jumper cables, and L298 while doing this project.
 
 ### Connection
 
-- From Pico to L298
+From Pico to L298
+
 - GP2 with IN1
 - GP3 with IN2
 - GP4 with ENA

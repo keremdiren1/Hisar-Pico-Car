@@ -16,32 +16,47 @@ while not wlan.isconnected():
 ip = wlan.ifconfig()[0]
 print("Connected to WiFi. IP:", ip)
 
-in1 = Pin(2, Pin.OUT)
-in2 = Pin(3, Pin.OUT)
-ena_pwm = PWM(Pin(4))
-ena_pwm.freq(1000)
-ena_pwm.duty_u16(40000)
+IN1 = Pin(2, Pin.OUT)
+IN2 = Pin(3, Pin.OUT)
+ENA = PWM(Pin(4))
+IN3 = Pin(5, Pin.OUT)
+IN4 = Pin(6, Pin.OUT)
+ENB = PWM(Pin(7))
+ENA.freq(1000)
+ENA.duty_u16(50000)
+ENB.freq(1000)
+ENB.duty_u16(50000)
 led = Pin(15, Pin.OUT)
 
 def stop():
-    in1.low()
-    in2.low()
+    IN1.value(0)
+    IN2.value(0)
+    IN3.value(0)
+    IN4.value(0)
 
 def forward():
-    in1.high()
-    in2.low()
+    IN1.value(1)
+    IN2.value(0)
+    IN3.value(0)
+    IN4.value(1)
 
 def backward():
-    in1.low()
-    in2.high()
+    IN1.value(0)
+    IN2.value(1)
+    IN3.value(1)
+    IN4.value(0)
 
 def left():
-    in1.low()
-    in2.high()
+    IN1.value(0)
+    IN2.value(0)
+    IN3.value(0)
+    IN4.value(1)
 
 def right():
-    in1.high()
-    in2.low()
+    IN1.value(1)
+    IN2.value(0)
+    IN3.value(0)
+    IN4.value(0)
 
 addr = socket.getaddrinfo('0.0.0.0', 80)[0][-1]
 s = socket.socket()

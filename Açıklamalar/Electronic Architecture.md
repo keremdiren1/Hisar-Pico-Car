@@ -10,6 +10,9 @@ From Pico to L298
 - GP3 with IN2
 - GP4 with ENA
 - GND with GND
-- 3.3V with 5V
+- 3v3(OUT) with 5V
 - External batteries with VCC
 - Motor terminals with OUT 1, OUT 2
+- GP5 with IN3
+- GP6 with IN4
+- GP7 with ENB

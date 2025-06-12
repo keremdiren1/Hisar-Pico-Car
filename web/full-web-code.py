@@ -50,14 +50,14 @@ def backward():
 
 def left():
     IN1.value(0)
-    IN2.value(0)
+    IN2.value(1)
     IN3.value(0)
     IN4.value(1)
 
 def right():
     IN1.value(1)
     IN2.value(0)
-    IN3.value(0)
+    IN3.value(1)
     IN4.value(0)
 
 # HTML page

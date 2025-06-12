@@ -1,4 +1,4 @@
-### Raspberry Pico 2
+### Raspberry Pico W
 
 - Operates at 3.3V logic.
 - Powered via USB (5V).

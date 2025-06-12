@@ -3,8 +3,8 @@ import socket
 from machine import Pin, PWM, time_pulse_us
 import time
 
-SSID = 'direnev'
-PASSWORD = '3562149160'
+SSID = 'YOUR_SSID'
+PASSWORD = 'YOUR_WI-FI_PASSWORD'
 
 # Connect to WiFi
 wlan = network.WLAN(network.STA_IF)

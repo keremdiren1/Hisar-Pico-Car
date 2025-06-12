@@ -39,28 +39,28 @@ def stop():
     IN4.value(0)
 
 def forward():
-    IN1.value(0)
-    IN2.value(1)
-    IN3.value(1)
-    IN4.value(0)
+    IN1.value(1)
+    IN2.value(0)
+    IN3.value(0)
+    IN4.value(1)
 
 def backward():
-    IN1.value(1)
-    IN2.value(0)
-    IN3.value(0)
-    IN4.value(1)
-
-def left():
-    IN1.value(1)
-    IN2.value(0)
+    IN1.value(0)
+    IN2.value(1)
     IN3.value(1)
     IN4.value(0)
 
-def right():
+def left():
     IN1.value(0)
     IN2.value(1)
     IN3.value(0)
     IN4.value(1)
+
+def right():
+    IN1.value(1)
+    IN2.value(0)
+    IN3.value(1)
+    IN4.value(0)
 
 def getDistance():
     TRIG.low()
